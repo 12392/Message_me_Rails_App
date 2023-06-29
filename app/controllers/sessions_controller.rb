@@ -14,6 +14,7 @@ class SessionsController < ApplicationController
         else
             # byebug
             flash.now[:error]= "There was somethong wrong with your login information"
+            render 'new'
         end
     end
 
